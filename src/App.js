@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import DrumKeys from './DrumKeys';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container' id='drum-machine'>
+      <h1 className='title'>
+        Drum Kit
+      </h1>
+      <h2>by Brandon Truong</h2>
+      <div id='display' className='drum-grid'>
+        <DrumKeys />
+      </div>
     </div>
   );
 }
